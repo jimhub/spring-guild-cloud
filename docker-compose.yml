@@ -1,0 +1,28 @@
+
+eureka:
+  image: springguild/eureka
+  ports:
+    - "8761:8761"
+hystrix-dashboard:
+  image: springguild/hystrix-dashboard
+  ports:
+    - "7979:7979"
+recipes:
+  image: springguild/recipes
+  ports:
+    - "8982:8982"
+  links:
+    - eureka
+users:
+  image: springguild/users
+  ports:
+    - "8981:8981"
+  links:
+    - eureka
+gateway:
+  image: springguild/gateway
+  ports:
+    - "8989:8989"
+  links:
+    - eureka
+
