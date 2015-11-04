@@ -1,0 +1,15 @@
+[submodule "eureka"]
+	path = eureka
+	url = https://github.com/jimhub/eureka.git
+[submodule "hystrix-dashboard"]
+	path = hystrix-dashboard
+	url = https://github.com/jimhub/hystrix-dashboard.git
+[submodule "users"]
+	path = users
+	url = https://github.com/jimhub/users.git
+[submodule "recipes"]
+	path = recipes
+	url = https://github.com/jimhub/recipes.git
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/jimhub/gateway.git
